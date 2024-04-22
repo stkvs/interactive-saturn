@@ -28,6 +28,29 @@ body{
     font-size: 2rem;
 }
 
+.info-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 16px;
+    width: 50px;
+    aspect-ratio: 1;
+    font-family: 'Jetbrains Mono', sans-serif;
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.1);
+    --webkit-bakdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: scale 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.info-button:hover {
+    scale: 1.05;
+}
+
 .loading-text {
     animation: fade reverse 2s forwards
 }
