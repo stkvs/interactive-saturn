@@ -30,7 +30,7 @@ setTimeout(() => {
     setTimeout(() => {
         preloader.style.display = "none";
     }, 500);
-}, 7500);
+}, 5000);
 
 // Fixed width for the loading text to prevent movement
 loadingText.style.width = loadingText.offsetWidth + 'px';

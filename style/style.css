@@ -28,6 +28,10 @@ body{
     font-size: 2rem;
 }
 
+.loading-text {
+    animation: fade reverse 2s forwards
+}
+
 .text-toggled {
     position: absolute;
     z-index: 200;
@@ -125,6 +129,16 @@ body{
     to {
         opacity: 1;
         right: 0; 
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
     }
 }
 
