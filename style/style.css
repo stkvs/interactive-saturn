@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'Jetbrains Mono';
+    src: url(../assets/fonts/JetBrainsMono-Regular.ttf);
+}
+
+.preloader {
+    width: 100dvw;
+    height: 100dvh;
+    background-color: lightskyblue;
+    position: absolute;
+    z-index: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Jetbrains Mono', sans-serif;
+    font-size: 2rem;
+}
+
+.text-toggled {
+    position: absolute;
+    z-index: 200;
+    color: white;
+    left: 50%;
+    bottom: 80%;
+    transform: translateX(-50%);
+    font-family: 'Jetbrains Mono', sans-serif;
+    opacity: 0.7;
+    text-align: center;
+}   
+
+.info-container {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px rgba(255,255,255,0.2) solid;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    position: absolute;
+    margin-left: 15vw;
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+}
+
+.text {
+    padding: 16px;
+    color: white;
+    font-family: 'Jetbrains Mono', sans-serif;
+    text-wrap: wrap;
+    flex: 1;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    padding: 8px;
+    width: 300px;
+    height: 600px;
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#card {
+    flex: 1 1 33%;
+    flex-grow: 1;
+    aspect-ratio: 1;
+    background-color: rgba(255,255,255,0.1);
+    border: 1px rgba(255,255,255,0.2) solid;
+    border-radius: 16px;
+    transition: 250ms ease-in-out;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card img {
+    width: 75px;
+    position: relative;
+    z-index: 100;
+    aspect-ratio: 1;
+}
+
+#card::before {
+    position: absolute;
+    content:"";
+    border-radius: 16px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 250ms ease-in-out;
+}
+
+#card:hover{
+    scale:1.025;
+    box-shadow: 0px 4px rgba(0,0,0,0.1);
+}
+
+#card:hover::before {
+    animation: top-up 250ms forwards cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: beige;
+}
+
+@keyframes top-up {
+    from {
+        opacity: 0;
+        right: 100%;
+    }
+
+    to {
+        opacity: 1;
+        right: 0; 
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        justify-content: center;
+    }
+
+    .info-container {
+        margin-left: 0px;
+    }
+
+    .text-toggled {
+        top: 5.5vh;
+    }
+}

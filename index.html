@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.132.2/examples/jsm/"
+          }
+        }
+    </script>
+</head>
+<body>
+  <div class="preloader">
+    <p class="loading-text">loading...</p>
+  </div>
+  <script type="module" src="js/preloader.js"></script>
+
+  <p class="text-toggled">click the information box, to make it dissapear</p>
+  <div class="info-container">
+    <div class="text">
+      <h3>threeJS Interactive Saturn</h3>
+      <p>Made using threeJS with GLTFLoader, Orbit Controls and UnrealBloomPass shader.</p>
+    </div>
+    <div class="container">
+      <div id="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+      </div>
+      <div id="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+      </div>
+      <div id="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+      </div>
+      <div id="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg" />
+      </div>
+    </div>
+  </div>
+  <script src="js/disableMenu.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

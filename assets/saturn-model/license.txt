@@ -1,0 +1,11 @@
+Model Information:
+* title:	saturn_planet
+* source:	https://sketchfab.com/3d-models/saturn-planet-5baffcf1f79d4e708763dab2ced2f762
+* author:	i686 (https://sketchfab.com/i686)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "saturn_planet" (https://sketchfab.com/3d-models/saturn-planet-5baffcf1f79d4e708763dab2ced2f762) by i686 (https://sketchfab.com/i686) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
