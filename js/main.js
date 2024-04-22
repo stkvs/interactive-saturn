@@ -42,7 +42,7 @@ loader.load(
     function ( gltf ) {
         // Called when the model is loaded
         model = gltf.scene; // Use the outer model variable
-        model.scale.setScalar(0.001); // Set the scale to 0.1 (10 times smaller)
+        //model.scale.setScalar(0.001); // Set the scale to 0.1 (10 times smaller)
         scene.add( model );
     },
     function ( xhr ) {
@@ -55,7 +55,7 @@ loader.load(
     }
 );
 
-const directionalLight = new THREE.DirectionalLight( 0xffffff, 1 );
+const directionalLight = new THREE.DirectionalLight( 0xffffff, 0.25 );
 scene.add( directionalLight );
 directionalLight.position.set(0, 5, 10)
 
@@ -67,6 +67,7 @@ function animate() {
 
 	if (model) { // Check if model is defined before attempting to rotate
         model.rotation.y += 0.01;
+		model.rotation.x += 0.0001;
     }
 	
 	//renderer.render( scene, camera );
