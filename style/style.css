@@ -17,7 +17,7 @@ body{
 .preloader {
     width: 100dvw;
     height: 100dvh;
-    background-color: lightskyblue;
+    background-color: #87cefa;
     position: absolute;
     z-index: 300;
     display: flex;
