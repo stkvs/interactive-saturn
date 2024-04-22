@@ -75,12 +75,12 @@ body{
 }
 
 #card {
-    flex: 1 1 33%;
+    flex: 1 1 20%;
     flex-grow: 1;
     aspect-ratio: 1;
     background-color: rgba(255,255,255,0.1);
     border: 1px rgba(255,255,255,0.2) solid;
-    border-radius: 16px;
+    border-radius: 8px;
     transition: 250ms ease-in-out;
     position: relative;
     display: flex;
@@ -89,7 +89,7 @@ body{
 }
 
 #card img {
-    width: 75px;
+    width: 45px;
     position: relative;
     z-index: 100;
     aspect-ratio: 1;
